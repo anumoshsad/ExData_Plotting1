@@ -12,6 +12,7 @@ for(i in 3:9){
 
 D <- data.frame(DateTime = dt, dat[,3:9])
 
+# default width height is 480 here
 png(filename = "plot1.png")
 hist(dat$Global_active_power, col = 'red', 
         main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
